@@ -1,0 +1,49 @@
+<!--order.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EkinCoffeeShop - Order Now</title>
+    <script src="script.js" defer></script>
+</head>
+
+    <section>
+        <h2>Order Form</h2>
+        <form>
+            <label for="Name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="No.phone">No.Phone: </label>
+            <input type="no.phone" id="no.phone" name="no.phone" required>
+
+            <label for="coffeeType">Select Coffee Type:</label>
+            <select id="coffeeType" name="coffeeType" required>
+                <option value="americano">Americano</option>
+                <option value="Cafe latte">Cafe Latte</option>
+                <option value="Caramel Macchiato">Caramel Macchiato</option>
+                <option value="Vanilla latte">Vanilla Latte</option>
+                <option value="Shakerato">Shakerato</option>
+                <option value="Hot Spanish Latte">Hot Spanish Latte</option>
+                <option value="Mocha">Mocha</option>
+                </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            </form >
+            <button type="button" onclick="Submit_Order()">Submit</button>
+            <script>
+                function Submit_Order() {
+            alert ("Order Placed successfully!");
+                }
+            </script>
+        </section>
+        <footer>
+            <p>&copy; EkinCoffeeShop</p>
+        </footer>
+    </body>
+    </html>
+    
